@@ -62,6 +62,10 @@ add_tache[0].addEventListener("click", function(event) {
     divCommand = create_node("div", {
         "class": "buttons"
     });
+    buttonDeleteForm = create_node("button", {
+        "class": "Delete"
+    });
+    buttonDeleteForm.innerHTML = "Delete Form";
     form_tache.appendChild(labelNom);
     form_tache.appendChild(inputNom);
     form_tache.appendChild(labelCategorie);
@@ -72,11 +76,10 @@ add_tache[0].addEventListener("click", function(event) {
     form_tache.appendChild(textareaBut);
     divCommand.appendChild(buttonReset);
     divCommand.appendChild(buttonSubmit);
+    divCommand.appendChild(buttonDeleteForm);
     form_tache.appendChild(divCommand);
     contenue.appendChild(form_tache);
-    form_tache.addEventListener("submit", function(event){
-        event.preventDefault();
-        form_tache.submit();
+    buttonDeleteForm.addEventListener("click", function(event){
         contenue.removeChild(form_tache);
     });
 });

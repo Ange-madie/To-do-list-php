@@ -231,14 +231,18 @@ footer article
     background-color: rgba(12, 255, 12, 0.40);
     border: 3px solid whitesmoke;
     border-radius: 5px;
+    color: whitesmoke;
+    font-size: 15px;
 }
 
 .buttons input[type="submit"]:hover
 {
     margin-left: 5px;
-    background-color: rgba(12, 255, 12, 0.77);
+    background-color: darkgreen;
     border: 3px solid whitesmoke;
     border-radius: 5px;
+    color: whitesmoke;
+    font-size: 15px;
 }
 
 .buttons input[type="reset"]
@@ -246,17 +250,42 @@ footer article
     background-color: rgba(255, 12, 12, 0.40);
     border: 3px solid whitesmoke;
     border-radius: 5px;
+    color: whitesmoke;
+    font-size: 15px;
 }
 
 .buttons input[type="reset"]:hover
 {
-    background-color: rgba(255, 12, 12, 0.77);
+    background-color: darkred;
     border: 3px solid whitesmoke;
     border-radius: 5px;
+    color: whitesmoke;
+    font-size: 15px;
 }
 
-input[type="reset"], input[type="submit"]
+input[type="reset"], input[type="submit"], .Delete
 {
     width: 15%;
     height: 50px;
+}
+
+.Delete
+{
+    background-color: rgba(255, 12, 12, 0.40);
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    margin-left: 5px;
+    float: right;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.Delete:hover
+{
+    background-color: darkred;
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    margin-left: 5px;
+    color: whitesmoke;
+    font-size: 15px;
 }

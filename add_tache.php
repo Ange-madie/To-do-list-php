@@ -5,10 +5,10 @@ define('SERVER',"localhost");
 define('BASE',"to_do_list");
 
 
-$name_tache = $_POST["name"];
-$categorie_tache = $_POST["categorie"];
-$faire_le = $_POST["date"];
-$consiste_a = $_POST["but"];
+$name_tache = isset($_POST["name"]) ?? "no-name";
+$categorie_tache = isset($_POST["categorie"]) ?? "no-categorie";
+$faire_le = isset($_POST["date"]) ?? "no-date";
+$consiste_a = isset($_POST["but"]) ?? "no-but";
 
 $dsn="mysql:dbname=".BASE.";host=".SERVER;
 try{
