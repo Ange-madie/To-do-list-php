@@ -57,7 +57,7 @@ add_tache[0].addEventListener("click", function(event) {
     });
     buttonSubmit = create_node("input", {
         "type": "submit",
-        "value": "Envoyez"
+        "value": "Enregistrer"
     });
     divCommand = create_node("div", {
         "class": "buttons"

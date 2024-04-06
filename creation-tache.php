@@ -4,7 +4,7 @@ include "include/header.php";
 ?>
 <div id="main_page">
     <div id="control">
-        <button class="add_categorie">+</button>
+        <button class="add_categorie">Créer</button>
     </div>
     <div id="content">
         
