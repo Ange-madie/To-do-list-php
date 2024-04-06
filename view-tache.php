@@ -39,6 +39,6 @@ try{
 ?>
 <?php
 include "include/footer.php";
-echo "\n\t<script type=\"text-javascript\" src=\"js/organise-tache.js\"></script>";
+echo "\n\t<script type=\"text/javascript\" src=\"js/organise-tache.js\"></script>\n";
 include "include/foot.inc.php";
 ?>

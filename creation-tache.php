@@ -12,6 +12,7 @@ include "include/header.php";
 </div>  
 <?php
 include_once "include/footer.php";
+echo '<script type="text/javascript" src="js/create-form.js"></script>';
 include "include/foot.inc.php";
 ?>
 
