@@ -13,3 +13,11 @@ for(i = 0;i<=categories.id.length;i++){
   }
 }
 
+for(i = 0; i<=categoried.length; i++){
+  categorie = document.getElementsByClassName(categoried[i])[0];
+  elements_categorie = document.getElementsByClassName(categoried[i]+"-tache");
+  for(j = 0; j<=elements_categorie.length; j++){
+      if(elements_categorie[j] !== undefined)
+        categorie.appendChild(elements_categorie[j]);
+  }
+}
