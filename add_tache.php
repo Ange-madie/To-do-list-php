@@ -21,8 +21,9 @@ try{
     $query->bindParam(":faire_le", $faire_le);
     $query->bindParam(":consiste_a", $consiste_a);
     $confirm = $query->execute();
-    echo '<h1>La tâche a été créer<h1>';
-    echo '<a href="/">Revenir à l\'accueil.</a>';
+    /*echo '<h1>La tâche a été créer<h1>';
+    echo '<a href="/">Revenir à l\'accueil.</a>';*/
+    header("Location: /view-tache.php");
 } catch (PDOException $e) {
     printf("Echec de la connexion : %s\n", $e->getMessage());
     exit();
