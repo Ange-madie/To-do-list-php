@@ -25,4 +25,5 @@ include "include/header.php";
 
 <?php
 include_once 'include/footer.php';
+include "include/foot.inc.php";
 ?>

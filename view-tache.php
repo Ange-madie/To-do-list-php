@@ -1,6 +1,5 @@
 <?php
 include "include/head.inc.php";
-echo "\n\t<script type=\"text-javascript\" src=\"js/organise-tache.js\"></script>";
 include "include/header.php";
 define('USER',"root");
 define('PASSWD',"");
@@ -40,4 +39,6 @@ try{
 ?>
 <?php
 include "include/footer.php";
+echo "\n\t<script type=\"text-javascript\" src=\"js/organise-tache.js\"></script>";
+include "include/foot.inc.php";
 ?>

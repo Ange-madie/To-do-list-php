@@ -12,5 +12,6 @@ include "include/header.php";
 </div>  
 <?php
 include_once "include/footer.php";
+include "include/foot.inc.php";
 ?>
 
