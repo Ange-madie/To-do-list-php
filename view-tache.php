@@ -1,5 +1,6 @@
 <?php
 include "include/head.inc.php";
+echo "\n\t<script type=\"text-javascript\" src=\"js/organise-tache.js\"></script>";
 include "include/header.php";
 define('USER',"root");
 define('PASSWD',"");
@@ -10,6 +11,8 @@ $dsn="mysql:dbname=".BASE.";host=".SERVER;
 <?php 
 $taches = new PDO("mysql:dbname=".BASE.";host=".SERVER, USER, PASSWD);
 $categories = array();
+$categorie_to_js = "<span id=\"";
+$cpt = 0;
 try{
     $connexion = new PDO($dsn, USER, PASSWD);
     $resultat = $connexion->query("SELECT * FROM taches");
@@ -23,9 +26,13 @@ try{
             echo "</div>";
         }
         $categories[] = $donnee[2];
+        $categorie_to_js = $categorie_to_js."$categories[$cpt]-";
+        $cpt++;
     }
     //echo $resultat->rowCount();
     $resultat->closeCursor();
+    $categorie_to_js = $categorie_to_js."\"></span>";
+    echo $categorie_to_js;
 } catch (PDOException $e) {
     printf("Echec de la connexion : %s\n", $e->getMessage());
     exit();
