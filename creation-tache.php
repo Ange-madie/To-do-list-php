@@ -1,5 +1,6 @@
 <?php
-include_once "include/header.php";
+include "include/head.inc.php";
+include "include/header.php";
 ?>
 <div id="main_page">
     <div id="control">

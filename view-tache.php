@@ -1,4 +1,5 @@
 <?php
+include "include/head.inc.php";
 include "include/header.php";
 define('USER',"root");
 define('PASSWD',"");
@@ -13,7 +14,6 @@ try{
     $connexion = new PDO($dsn, USER, PASSWD);
     $resultat = $connexion->query("SELECT * FROM taches");
     while($donnee = $resultat->fetch()){
-        echo "test ".in_array($donnee[2], $categories);
         if(in_array($donnee[2], $categories)){
             echo "<p class=\"$donnee[2]-tache\">".'La tâche "'.$donnee[1].'"'." est à faire le ".$donnee[3]." et consiste à ".$donnee[4]."</p>";
         }else{

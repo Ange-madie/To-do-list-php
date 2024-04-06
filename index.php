@@ -1,5 +1,6 @@
 <?php
-include_once 'include/header.php';
+include "include/head.inc.php";
+include "include/header.php";
 ?>
 
 	<h1 class="title center">Créez, Organisez et Surveillez vos "To-Do-List".</h1>
